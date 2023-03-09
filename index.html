@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+
+    <!-- HEADER -->
+
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -59,7 +62,7 @@
           <h1 class="hero-section-title">
             Effective Solutions for Your Business
           </h1>
-          <button class="button" type="button">Order Service</button>
+          <button class="button" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
 
@@ -443,5 +446,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close>
+          <svg class="close-modal-icon" >
+            <use href="./images/icons.svg#icon-close-modal" ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+  <script src="./js/modal.js"></script>
   </body>
 </html>
