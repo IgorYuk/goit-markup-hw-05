@@ -82,8 +82,9 @@ body {
 /* ================== HEADER =================== */
 
 .header {
-   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .first-letter-logo {
@@ -104,27 +105,27 @@ body {
 }
 
 .menu-link {
-position: relative;
-display: block;
-padding: 24px 0;
+  position: relative;
+  display: block;
+  padding: 24px 0;
 
   font-weight: 500;
   color: var(--main-title-color);
 
   transition: color var(--transition-function);
- }
+}
 
- .current {
-color: var(--accent-color);
- }
+.current {
+  color: var(--accent-color);
+}
 
 .current::after {
   content: '';
   position: absolute;
 
   left: 0;
-  bottom: -4px;
- 
+  bottom: -1px;
+
   display: block;
   width: 100%;
   height: 4px;
@@ -140,7 +141,7 @@ color: var(--accent-color);
 .phone-number-link {
   color: var(--contacts-link-color);
 
-transition: color var(--transition-function);
+  transition: color var(--transition-function);
 }
 
 .adress {
@@ -167,13 +168,11 @@ transition: color var(--transition-function);
 .mail-item {
   margin-right: 40px;
   gap: 40px;
-  }
+}
 
 .adress {
   margin-left: auto;
 }
-
-
 
 /* ================== HEADER / =================== */
 
@@ -189,7 +188,6 @@ transition: color var(--transition-function);
   margin-bottom: 8px;
   color: var(--main-title-color);
 }
-
 
 .hero-section {
   text-align: center;
@@ -356,7 +354,7 @@ transition: color var(--transition-function);
   fill: #f4f4fd;
   background-color: #4d5ae5;
 
-  transition-property: background-color var(--transition-function);
+  transition: background-color var(--transition-function);
 }
 
 .social-list-link:hover,
@@ -396,13 +394,14 @@ transition: color var(--transition-function);
   border: 1px solid #8e8f99;
   border-radius: 4px;
 
-transition: fill var(--transition-function), border-color var(--transition-function);
+  transition: background-color var(--transition-function),
+    fill var(--transition-function);
 }
 
 .customers-icon {
   fill: #afb1b8;
 
-transition: fill var(--transition-function);
+  transition: fill var(--transition-function);
 }
 
 .fifth-section-link:is(:hover, :focus) {
@@ -413,9 +412,9 @@ transition: fill var(--transition-function);
   fill: var(--accent-color);
 }
 
-/* ================== FIFTH SECTION / =================== */
+/* ================== / FIFTH SECTION =================== */
 
-/* ================== MAIN / =================== */
+/* ================== / MAIN =================== */
 
 /* ================== PORTFOLIO =================== */
 
@@ -434,7 +433,6 @@ transition: fill var(--transition-function);
   background: #ffffff;
 }
 
-
 .menu-portfolio-btn {
   font-family: inherit;
   font-size: 16px;
@@ -447,7 +445,9 @@ transition: fill var(--transition-function);
   border-radius: 4px;
   padding: 12px 24px;
 
-  transition: background-color var(--transition-function), color var(--transition-function), border-color var(--transition-function), box-shadow var(--transition-function);
+  transition: background-color var(--transition-function),
+    color var(--transition-function), border-color var(--transition-function),
+    box-shadow var(--transition-function);
 }
 .menu-portfolio-link:not(:last-child) {
   margin-right: 24px;
@@ -455,13 +455,11 @@ transition: fill var(--transition-function);
 
 .menu-portfolio-btn:hover,
 .menu-portfolio-btn:focus {
-
   color: var(--second-title-color);
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12);
-  
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* CARD SET */
@@ -496,7 +494,7 @@ transition: fill var(--transition-function);
 }
 
 .portfolio-card-link {
-   display: block;
+  display: block;
   text-decoration: none;
 
   transition: box-shadow var(--transition-function);
@@ -508,8 +506,8 @@ transition: fill var(--transition-function);
 }
 
 .portfolio-overlay-card {
-position: relative;
-overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .overlay {
@@ -527,16 +525,14 @@ overflow: hidden;
   transform: translate(0, 100%);
   transition: transform var(--transition-function);
 
-  color: #F4F4FD;
-  background-color: #4D5AE5;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
 }
 
 .portfolio-card-link:hover .overlay,
-.portfolio-card-link:focus .overlay
- {
+.portfolio-card-link:focus .overlay {
   transform: translate(0, 0);
 }
-
 
 /* ================== PORTFOLIO / =================== */
 
@@ -575,7 +571,6 @@ overflow: hidden;
 
 .footer-media-link {
   background-color: rgba(255, 255, 255, 0.1);
-  
 }
 
 .footer-media-link:is(:hover, :focus) {
@@ -615,13 +610,14 @@ overflow: hidden;
 
   background-color: rgba(46, 47, 66, 0.4);
 
-  transition: opacity var(--transition-function), visibility var(--transition-function);
+  transition: opacity var(--transition-function),
+    visibility var(--transition-function);
 }
 
 .backdrop.is-hidden {
-opacity: 0;
-visibility: hidden;
-pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .backdrop.is-hidden .modal {
@@ -636,14 +632,14 @@ pointer-events: none;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
   height: 576px;
-  background-color: #FCFCFC;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transition: opacity var(--transition-function), visibility var(--transition-function), transform var(--transition-function);
-
- }
-
+  transition: opacity var(--transition-function),
+    visibility var(--transition-function), transform var(--transition-function);
+}
 
 .modal-close-button {
   position: absolute;
@@ -654,22 +650,23 @@ pointer-events: none;
   justify-content: center;
   align-items: center;
   padding: 0;
-  
+
   width: 24px;
   height: 24px;
-  background: #E7E9FC;
+  background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  transition: background-color var(--transition-function), fill var(--transition-function);
-   }
+  transition: background-color var(--transition-function),
+    fill var(--transition-function);
+}
 
 .modal-close-button:is(:hover, :focus) {
   fill: var(--second-title-color);
   background-color: var(--accent-color);
 }
 
-.close-modal-icon { 
+.close-modal-icon {
   width: 8px;
   height: 8px;
 }
