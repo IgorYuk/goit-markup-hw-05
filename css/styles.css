@@ -394,7 +394,7 @@ body {
   border: 1px solid #8e8f99;
   border-radius: 4px;
 
-  transition: background-color var(--transition-function),
+  transition: border-color var(--transition-function),
     fill var(--transition-function);
 }
 
@@ -534,7 +534,7 @@ body {
   transform: translate(0, 0);
 }
 
-/* ================== PORTFOLIO / =================== */
+/* ================== /   PORTFOLIO =================== */
 
 /* ================== FOOTER =================== */
 .footer {
